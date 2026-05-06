@@ -1,13 +1,3 @@
-/**
- * OfficeMax India - Backend Server
- * Handles: Contact form submissions via Nodemailer (Gmail SMTP)
- * 
- * Setup Instructions:
- * 1. Copy .env.example to .env
- * 2. Add your Gmail credentials (use App Password for security)
- * 3. Run: npm install && npm start
- */
-
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
@@ -17,24 +7,17 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// =========================================
-// MIDDLEWARE
-// =========================================
 
-// Parse JSON request bodies
+
 app.use(express.json({ limit: '1mb' }));
 
-// Enable CORS for all origins (configure for production)
 app.use(cors());
 
-// Serve static files from the root directory (frontend) with clean URLs
 app.use(express.static(path.join(__dirname, '..'), { extensions: ['html'] }));
 
-// =========================================
-// NODEMAILER TRANSPORT CONFIGURATION
-// =========================================
 
-// Create reusable transporter using Gmail SMTP
+
+
 const createTransporter = () => {
     return nodemailer.createTransport({
         service: 'gmail',
@@ -71,14 +54,10 @@ const checkRateLimit = (ip) => {
     return data.count <= maxReq;
 };
 
-// Trust reverse proxy (for services like Render, Heroku to get real IPs)
+
 app.set('trust proxy', 1);
 
-/**
- * POST /api/contact
- * Handles contact form submissions
- * Validates input, sanitizes data, checks rate limit, sends email via Gmail SMTP
- */
+
 app.post('/api/contact', async (req, res) => {
     try {
         // ---- Security: Rate Limiting ----
@@ -230,7 +209,7 @@ app.post('/api/contact', async (req, res) => {
 
         await transporter.sendMail(mailOptions);
 
-        console.log(`✅ Email sent to ${recipientEmail} from ${name} (${email})`);
+        console.log(` Email sent to ${recipientEmail} from ${name} (${email})`);
 
         res.json({
             success: true,
@@ -238,7 +217,7 @@ app.post('/api/contact', async (req, res) => {
         });
 
     } catch (error) {
-        console.error('❌ Error sending email:', error.message);
+        console.error(' Error sending email:', error.message);
 
         res.status(500).json({
             success: false,
@@ -247,35 +226,8 @@ app.post('/api/contact', async (req, res) => {
     }
 });
 
-// =========================================
-// TEMPORARY: Copy hero slider images (remove after use)
-// =========================================
-app.get('/api/copy-hero-images', (req, res) => {
-    const fs = require('fs');
-    const srcDir = 'C:\\Users\\ADMIN\\.resource_data\\antigravity\\brain\\0528bfc3-fffe-4e4c-b831-3c4e7eed093f';
-    const destDir = path.join(__dirname, '..', 'public', 'images');
-    const files = [
-        { src: 'media__1777373442822.jpg', dest: 'hero-slide-1.jpg' },
-        { src: 'media__1777373474042.jpg', dest: 'hero-slide-2.jpg' },
-        { src: 'media__1777373499298.jpg', dest: 'hero-slide-3.jpg' },
-        { src: 'media__1777373520624.jpg', dest: 'hero-slide-4.jpg' },
-        { src: 'media__1777373544653.jpg', dest: 'hero-slide-5.jpg' },
-    ];
-    const results = [];
-    files.forEach(f => {
-        try {
-            fs.copyFileSync(path.join(srcDir, f.src), path.join(destDir, f.dest));
-            results.push({ file: f.dest, status: 'ok' });
-        } catch (err) {
-            results.push({ file: f.dest, status: 'error', msg: err.message });
-        }
-    });
-    res.json({ results });
-});
 
-// =========================================
-// HEALTH CHECK ROUTE
-// =========================================
+
 app.get('/api/health', (req, res) => {
     res.json({
         status: 'ok',
@@ -286,16 +238,11 @@ app.get('/api/health', (req, res) => {
     });
 });
 
-// =========================================
-// CATCH-ALL: Serve index.html for SPA routing
-// =========================================
+
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'index.html'));
 });
 
-// =========================================
-// START SERVER
-// =========================================
 app.listen(PORT, () => {
     console.log('');
     console.log('  ╔══════════════════════════════════════════╗');
@@ -307,12 +254,12 @@ app.listen(PORT, () => {
     console.log('');
 
     if (!process.env.GMAIL_USER || process.env.GMAIL_USER === 'your-email@gmail.com') {
-        console.log('  ⚠️  Gmail not configured. Contact form runs in demo mode.');
-        console.log('  📝 Copy .env.example to .env and add your Gmail App Password.');
+        console.log('  Gmail not configured. Contact form runs in demo mode.');
+        console.log('   Copy .env.example to .env and add your Gmail App Password.');
         console.log('');
     } else {
-        console.log(`  ✅ Gmail configured: ${process.env.GMAIL_USER}`);
-        console.log(`  📬 Emails will be sent to: ${process.env.RECIPIENT_EMAIL || process.env.GMAIL_USER}`);
+        console.log(`   Gmail configured: ${process.env.GMAIL_USER}`);
+        console.log(`  Emails will be sent to: ${process.env.RECIPIENT_EMAIL || process.env.GMAIL_USER}`);
         console.log('');
     }
 });
