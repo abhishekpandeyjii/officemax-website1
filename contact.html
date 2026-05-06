@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | OfficeMax India</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="/" class="nav-logo">
+                <img src="public/images/logo.png" alt="OfficeMax - Encouraging India" height="70">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="/about" class="nav-link">About Us</a></li>
+                <li><a href="/services" class="nav-link">Services</a></li>
+                <li><a href="/products" class="nav-link">Products</a></li>
+                <li><a href="/#support" class="nav-link">Support</a></li>
+                <li><a href="/#process" class="nav-link">Process</a></li>
+                <li><a href="/gifting" class="nav-link">Corporate Gifting</a></li>
+                <li><a href="/#clients" class="nav-link">Clients</a></li>
+                <li><a href="/contact" class="nav-link nav-cta-link active">Contact Us</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <div style="padding-top: 100px;"></div>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-badge">Get In Touch</span>
+                <h2 class="section-title">Let's <span class="text-gradient">Work Together</span></h2>
+                <p class="section-subtitle">Have a requirement? Reach out to us and our team will get back to you within 24 hours.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info animate-on-scroll">
+                    <div class="contact-info-card">
+                        <div class="info-item">
+                            <div class="info-icon-wrap"><i data-lucide="mail" class="info-icon"></i></div>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>order@officemax.co.in</p>
+                                <p>info@officemax.co.in</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon-wrap"><i data-lucide="globe" class="info-icon"></i></div>
+                            <div>
+                                <h4>Website</h4>
+                                <p>www.officemax.co.in</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon-wrap"><i data-lucide="map-pin" class="info-icon"></i></div>
+                            <div>
+                                <h4>Head Office</h4>
+                                <p>Mumbai, Maharashtra</p>
+                                <p>PAN India Operations</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon-wrap"><i data-lucide="clock" class="info-icon"></i></div>
+                            <div>
+                                <h4>Business Hours</h4>
+                                <p>Mon – Sat: 9:00 AM – 6:00 PM</p>
+                                <p>Sun: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper animate-on-scroll">
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="contactName">Full Name <span class="required">*</span></label>
+                            <div class="input-wrapper">
+                                <i data-lucide="user" class="input-icon"></i>
+                                <input type="text" id="contactName" name="name" placeholder="Enter your full name" required>
+                            </div>
+                            <span class="error-msg" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Email Address <span class="required">*</span></label>
+                            <div class="input-wrapper">
+                                <i data-lucide="mail" class="input-icon"></i>
+                                <input type="email" id="contactEmail" name="email" placeholder="Enter your email address" required>
+                            </div>
+                            <span class="error-msg" id="emailError"></span>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactPhone">Phone Number</label>
+                                <div class="input-wrapper">
+                                    <i data-lucide="phone" class="input-icon"></i>
+                                    <input type="tel" id="contactPhone" name="phone" placeholder="+91 XXXXX XXXXX">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactCompany">Company Name</label>
+                                <div class="input-wrapper">
+                                    <i data-lucide="building" class="input-icon"></i>
+                                    <input type="text" id="contactCompany" name="company" placeholder="Your company name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">Subject</label>
+                            <div class="input-wrapper">
+                                <i data-lucide="tag" class="input-icon"></i>
+                                <select id="contactSubject" name="subject">
+                                    <option value="">Select a topic</option>
+                                    <option value="Office Supplies">Office Supplies</option>
+                                    <option value="Corporate Gifting">Corporate Gifting</option>
+                                    <option value="IT Products">IT Products</option>
+                                    <option value="Pantry Services">Pantry Services</option>
+                                    <option value="Printing Services">Printing Services</option>
+                                    <option value="General Inquiry">General Inquiry</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Message <span class="required">*</span></label>
+                            <div class="input-wrapper textarea-wrapper">
+                                <i data-lucide="message-square" class="input-icon"></i>
+                                <textarea id="contactMessage" name="message" placeholder="Tell us about your requirements..." rows="5" required></textarea>
+                            </div>
+                            <span class="error-msg" id="messageError"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-submit" id="submitBtn">
+                            <i data-lucide="send" class="btn-icon"></i>
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading" style="display:none;">
+                                <span class="spinner"></span> Sending...
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Google Maps Location -->
+            <div class="contact-map-section animate-on-scroll">
+                <div class="map-header">
+                    <div class="map-header-icon">
+                        <i data-lucide="map-pin" class="map-pin-icon"></i>
+                    </div>
+                    <div>
+                        <h3 class="map-title">Our Location</h3>
+                        <p class="map-subtitle">Visit us at our head office in Mumbai</p>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d471.8!2d72.8386389!3d19.1823082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7002de9aa35%3A0x555d31680fa48863!2sSainath%20Apartments!5e0!3m2!1sen!2sin!4v1714300000000!5m2!1sen!2sin"
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="OfficeMax Head Office Location - Malad, Mumbai">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <i data-lucide="check-circle" class="toast-icon"></i>
+            <div>
+                <strong class="toast-title">Message Sent!</strong>
+                <p class="toast-msg">Thank you for reaching out. We'll get back to you within 24 hours.</p>
+            </div>
+        </div>
+        <button class="toast-close" id="toastClose">
+            <i data-lucide="x" class="toast-close-icon"></i>
+        </button>
+        <div class="toast-progress" id="toastProgress"></div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="nav-logo footer-logo">
+                        <img src="public/images/logo.png" alt="OfficeMax - Encouraging India" height="75">
+                    </a>
+                    <p class="footer-desc">One of the largest sellers of office products in India.</p>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/products">Products</a></li>
+                        <li><a href="/gifting">Corporate Gifting</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>
+                            <span><i data-lucide="map-pin" style="width:14px;height:14px;display:inline;vertical-align:middle;margin-right:6px;color:var(--accent);"></i>S-001, Sainath Apt, P.G.Marg, Off.Link Road, Malad (W), Mumbai- 400064</span>
+                        </li>
+                        <li>
+                            <span><i data-lucide="phone" style="width:14px;height:14px;display:inline;vertical-align:middle;margin-right:6px;color:var(--accent);"></i>+91 8453656565</span>
+                        </li>
+                        <li>
+                            <a href="mailto:order@officemax.co.in"><i data-lucide="mail" style="width:14px;height:14px;display:inline;vertical-align:middle;margin-right:6px;color:var(--accent);"></i>order@officemax.co.in</a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@officemax.co.in"><i data-lucide="mail" style="width:14px;height:14px;display:inline;vertical-align:middle;margin-right:6px;color:var(--accent);"></i>info@officemax.co.in</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 All Rights Reserved. <br> Developed by Choredigital Communication LLP</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

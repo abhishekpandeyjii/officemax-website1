@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="OfficeMax India - Your trusted partner for office supplies, corporate gifting, IT products, pantry services, and more. Encouraging India since 2000.">
+    <meta name="keywords"
+        content="OfficeMax, office supplies India, corporate gifting, stationery, B2B office products, Mumbai, Maharashtra">
+    <meta name="author" content="OfficeMax India">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="OfficeMax India - Encouraging India">
+    <meta property="og:description"
+        content="One of the largest sellers of office products in India. Quality office supplies, corporate gifting & more.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.officemax.co.in">
+    <meta property="og:image" content="public/images/hero-banner.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="OfficeMax India - Encouraging India">
+    <meta name="twitter:description" content="Your trusted partner for office supplies, corporate gifting, and more.">
+
+    <title>OfficeMax India | Encouraging India - Office Supplies & Corporate Solutions</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- ============================================= -->
+    <!-- NAVIGATION BAR                                -->
+    <!-- ============================================= -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="/" class="nav-logo">
+                <img src="public/images/logo.png" alt="OfficeMax - Encouraging India" height="70">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/" class="nav-link active">Home</a></li>
+                <li><a href="/about" class="nav-link">About Us</a></li>
+                <li><a href="/services" class="nav-link">Services</a></li>
+                <li><a href="/products" class="nav-link">Products</a></li>
+                <li><a href="/#support" class="nav-link">Support</a></li>
+                <li><a href="/#process" class="nav-link">Process</a></li>
+                <li><a href="/gifting" class="nav-link">Corporate Gifting</a></li>
+                <li><a href="/#clients" class="nav-link">Clients</a></li>
+                <li>
+                    <a href="assets/Office_Max_Profile.pdf" download="OfficeMax_Company_Profile.pdf"
+                        class="nav-link nav-download-btn" id="downloadProfileBtn">
+                        <i data-lucide="download" class="nav-download-icon"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://officemax.co.in/corporate-login" class="nav-link nav-corporate-btn">
+                        <i data-lucide="shield-check" class="nav-corporate-icon"></i>
+                        <span>Login</span>
+                    </a>
+                </li>
+                <li><a href="/contact" class="nav-link nav-cta-link">Contact Us</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ============================================= -->
+    <!-- 1. HERO SECTION                               -->
+    <!-- ============================================= -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content animate-on-scroll">
+                <div class="hero-badge">
+                    <i data-lucide="award" class="badge-icon"></i>
+                    <span>PAN India Excellence</span>
+                </div>
+                <h1 class="hero-title">
+                    Your <span class="text-gradient">Complete Office</span> Solutions Partner
+                </h1>
+                <p class="hero-subtitle">
+                    We are an industry-leading supplier specializing in <strong>Office Stationery</strong>,
+                    <strong>Professional Printing</strong>, and <strong>Housekeeping</strong> solutions. Operating
+                    across PAN India to keep your business running smoothly.
+                </p>
+                <div class="hero-cta-group">
+                    <a href="/contact" class="btn btn-primary btn-lg">
+                        <i data-lucide="send" class="btn-icon"></i>
+                        <span>Get a Quote</span>
+                    </a>
+                    <a href="/services" class="btn btn-outline btn-lg">
+                        <span>Our Services</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="500">0</div><span class="stat-suffix">+</span>
+                        <span class="stat-label">Corporate Clients</span>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="20">0</div><span class="stat-suffix">+</span>
+                        <span class="stat-label">Product Categories</span>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="24">0</div><span class="stat-suffix">/7</span>
+                        <span class="stat-label">Client Support</span>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="100">0</div><span class="stat-suffix">%</span>
+                        <span class="stat-label">Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual animate-on-scroll" data-delay="200">
+                <div class="hero-slider" id="heroSlider">
+                    <div class="hero-slides-track">
+                        <div class="hero-slide active">
+                            <img src="public/images/hero-slide-1.jpg.jfif" alt="OfficeMax Premium Office Workspace"
+                                loading="eager" width="600" height="400">
+                        </div>
+                        <div class="hero-slide">
+                            <img src="public/images/hero-slide-2.jpg.jfif" alt="Professional Office Desk Setup"
+                                loading="lazy" width="600" height="400">
+                        </div>
+                        <div class="hero-slide">
+                            <img src="public/images/hero-slide-3.jpg.jfif" alt="Modern Corporate Environment"
+                                loading="lazy" width="600" height="400">
+                        </div>
+                        <div class="hero-slide">
+                            <img src="public/images/hero-slide-4.jpg.jfif" alt="Premium Stationery Solutions"
+                                loading="lazy" width="600" height="400">
+                        </div>
+                        <div class="hero-slide">
+                            <img src="public/images/hero-slide-5.jpg.jfif" alt="Corporate Logistics and Supply"
+                                loading="lazy" width="600" height="400">
+                        </div>
+                    </div>
+                    <div class="hero-slider-dots">
+                        <button class="slider-dot active" data-slide="0"></button>
+                        <button class="slider-dot" data-slide="1"></button>
+                        <button class="slider-dot" data-slide="2"></button>
+                        <button class="slider-dot" data-slide="3"></button>
+                        <button class="slider-dot" data-slide="4"></button>
+                    </div>
+                </div>
+                <div class="hero-image-float float-1">
+                    <i data-lucide="shield-check" class="float-icon"></i>
+                    <span>Premium Quality</span>
+                </div>
+                <div class="hero-image-float float-2">
+                    <i data-lucide="truck" class="float-icon"></i>
+                    <span>PAN India Delivery</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path
+                    d="M0 60L48 65C96 70 192 80 288 82C384 84 480 78 576 68C672 58 768 44 864 42C960 40 1056 50 1152 56C1248 62 1344 64 1392 65L1440 66V120H0V60Z"
+                    fill="var(--bg-primary)" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- 2. ABOUT SECTION                              -->
+    <!-- ============================================= -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-badge">About Us</span>
+                <h2 class="section-title">Industry Leaders in <span class="text-gradient">Office Solutions</span></h2>
+                <p class="section-subtitle">A PAN India company with a unique approach to fostering client satisfaction
+                    through honesty, integrity, and commitment.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-col animate-on-scroll">
+                    <div class="about-image-wrapper">
+                        <img src="public/images/about-company.png" alt="OfficeMax Corporate Team" loading="lazy"
+                            width="560" height="400">
+                        <div class="about-exp-badge">
+                            <span class="exp-number">5+</span>
+                            <span class="exp-text">Years Experience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content-col animate-on-scroll">
+                    <div class="about-story">
+                        <h3>Who We Are</h3>
+                        <p>Office Max is an experienced market supplier of office products and services. Sales are processed through multiple channels, consisting of office supply stores, a contract sales force, Internet sites, direct marketing catalogs, and call centers, all supported by its network of cross docks, warehouses, and delivery operations.</p>
+                        <p style="margin-top: 15px;">Today, Office Max is one of the largest sellers of office products and an industry leader in every distribution channel, including stores, direct mail, contract delivery, and business-to-business electronic commerce.</p>
+                        <a href="/about" class="btn btn-outline" style="margin-top: 20px;">
+                            <span>Read Our Full Story</span>
+                            <i data-lucide="arrow-right" class="btn-icon-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- 3. SERVICES SECTION                           -->
+    <!-- ============================================= -->
+    <section class="services" id="services" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-badge">What We Offer</span>
+                <h2 class="section-title">Comprehensive <span class="text-gradient">Office Solutions</span></h2>
+                <p class="section-subtitle">From stationery to IT equipment, pantry essentials to corporate gifts — we
+                    cover every aspect of your workplace needs.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card animate-on-scroll" data-delay="0">
+                    <div class="service-icon-wrapper"><i data-lucide="pen-tool" class="service-icon"></i></div>
+                    <h3>Office Stationery</h3>
+                    <p>Complete range of general office supplies including paper, files, folders, and organizational tools.</p>
+                    <a href="/services" class="service-link">Learn More <i data-lucide="arrow-right" class="link-arrow"></i></a>
+                </div>
+                <div class="service-card animate-on-scroll" data-delay="100">
+                    <div class="service-icon-wrapper"><i data-lucide="monitor" class="service-icon"></i></div>
+                    <h3>IT Products</h3>
+                    <p>Laptops, desktops, peripherals, and all IT accessories for modern workplaces.</p>
+                    <a href="/products" class="service-link">Learn More <i data-lucide="arrow-right" class="link-arrow"></i></a>
+                </div>
+                <div class="service-card animate-on-scroll" data-delay="200">
+                    <div class="service-icon-wrapper"><i data-lucide="gift" class="service-icon"></i></div>
+                    <h3>Corporate Gifting</h3>
+                    <p>Curated collection of 20+ categories of corporate gifts from branded merchandise to handicrafts.</p>
+                    <a href="/gifting" class="service-link">Learn More <i data-lucide="arrow-right" class="link-arrow"></i></a>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="/services" class="btn btn-primary">
+                    <span>View All Services</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- 4. SUPPORT / FEATURES TABLE SECTION           -->
+    <!-- ============================================= -->
+    <section class="support" id="support">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-badge">Support Matrix</span>
+                <h2 class="section-title">Why Choose <span class="text-gradient">OfficeMax?</span></h2>
+                <p class="section-subtitle">We go beyond simple supply—providing a complete ecosystem for your office efficiency.</p>
+            </div>
+
+            <div class="support-table-wrapper animate-on-scroll">
+                <table class="support-table">
+                    <thead>
+                        <tr>
+                            <th>Service Category</th>
+                            <th>Features & Benefits</th>
+                            <th>Availability</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="table-category">
+                                    <i data-lucide="truck" class="table-icon"></i>
+                                    <span>Same-Day Delivery</span>
+                                </div>
+                            </td>
+                            <td>Urgent requirements delivered within hours across Mumbai.</td>
+                            <td>PAN India</td>
+                            <td><span class="status-badge status-active"><i data-lucide="check-circle" class="status-icon"></i> Active</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="table-category">
+                                    <i data-lucide="shopping-cart" class="table-icon"></i>
+                                    <span>Inventory Management</span>
+                                </div>
+                            </td>
+                            <td>We track and restock your office supplies automatically.</td>
+                            <td>Contractual</td>
+                            <td><span class="status-badge status-active"><i data-lucide="check-circle" class="status-icon"></i> Active</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="table-category">
+                                    <i data-lucide="headphones" class="table-icon"></i>
+                                    <span>Dedicated Account Manager</span>
+                                </div>
+                            </td>
+                            <td>Single point of contact for all your inquiries and orders.</td>
+                            <td>Premium</td>
+                            <td><span class="status-badge status-active"><i data-lucide="check-circle" class="status-icon"></i> Active</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="table-category">
+                                    <i data-lucide="file-text" class="table-icon"></i>
+                                    <span>Customized Reporting</span>
+                                </div>
+                            </td>
+                            <td>Monthly consumption analysis and cost optimization reports.</td>
+                            <td>Standard</td>
+                            <td><span class="status-badge status-active"><i data-lucide="check-circle" class="status-icon"></i> Active</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="table-category">
+                                    <i data-lucide="printer" class="table-icon"></i>
+                                    <span>Professional Printing</span>
+                                </div>
+                            </td>
+                            <td>High-quality digital and offset printing for all business needs.</td>
+                            <td>On-Demand</td>
+                            <td><span class="status-badge status-active"><i data-lucide="check-circle" class="status-icon"></i> Active</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="table-category">
+                                    <i data-lucide="shield" class="table-icon"></i>
+                                    <span>Housekeeping Supplies</span>
+                                </div>
+                            </td>
+                            <td>Premium cleaning and pantry products for a hygienic workplace.</td>
+                            <td>Subscription</td>
+                            <td><span class="status-badge status-active"><i data-lucide="check-circle" class="status-icon"></i> Active</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="table-category">
+                                    <i data-lucide="cpu" class="table-icon"></i>
+                                    <span>IT Procurement</span>
+                                </div>
+                            </td>
+                            <td>Hardware and software solutions with full setup support.</td>
+                            <td>Consultative</td>
+                            <td><span class="status-badge status-active"><i data-lucide="check-circle" class="status-icon"></i> Active</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="delivery-grid">
+                <div class="delivery-title animate-on-scroll">
+                    <i data-lucide="send" class="delivery-title-icon"></i>
+                    <h3>Estimated Delivery Timelines</h3>
+                </div>
+                <div class="delivery-cards">
+                    <div class="delivery-card animate-on-scroll" data-delay="0">
+                        <div class="delivery-icon-wrap"><i data-lucide="zap" class="delivery-icon"></i></div>
+                        <h4>Express</h4>
+                        <div class="delivery-time">4-6 Hours</div>
+                        <p class="delivery-desc">Mumbai Metropolis</p>
+                    </div>
+                    <div class="delivery-card animate-on-scroll" data-delay="100">
+                        <div class="delivery-icon-wrap"><i data-lucide="clock" class="delivery-icon"></i></div>
+                        <h4>Standard</h4>
+                        <div class="delivery-time">24 Hours</div>
+                        <p class="delivery-desc">Across Maharashtra</p>
+                    </div>
+                    <div class="delivery-card animate-on-scroll" data-delay="200">
+                        <div class="delivery-icon-wrap"><i data-lucide="globe" class="delivery-icon"></i></div>
+                        <h4>National</h4>
+                        <div class="delivery-time">3-5 Days</div>
+                        <p class="delivery-desc">PAN India Coverage</p>
+                    </div>
+                    <div class="delivery-card animate-on-scroll" data-delay="300">
+                        <div class="delivery-icon-wrap"><i data-lucide="package" class="delivery-icon"></i></div>
+                        <h4>Bulk</h4>
+                        <div class="delivery-time">Custom</div>
+                        <p class="delivery-desc">As per consignment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- 5. ORDER PROCESS SECTION                      -->
+    <!-- ============================================= -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-badge">How It Works</span>
+                <h2 class="section-title">Seamless <span class="text-gradient">Order Process</span></h2>
+                <p class="section-subtitle">A simple 4-step workflow to get your office essentials delivered.</p>
+            </div>
+            
+            <div class="process-timeline">
+                <div class="timeline-line"></div>
+                
+                <div class="process-step animate-on-scroll">
+                    <div class="step-number">01</div>
+                    <div class="step-card">
+                        <div class="step-icon-wrap"><i data-lucide="search" class="step-icon"></i></div>
+                        <h3>Choose Products</h3>
+                        <p>Browse our extensive catalog of stationery, IT equipment, and housekeeping products.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step animate-on-scroll">
+                    <div class="step-number">02</div>
+                    <div class="step-card">
+                        <div class="step-icon-wrap"><i data-lucide="file-edit" class="step-icon"></i></div>
+                        <h3>Request Quote</h3>
+                        <p>Submit your requirements and get a competitive price estimate within 24 hours.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step animate-on-scroll">
+                    <div class="step-number">03</div>
+                    <div class="step-card">
+                        <div class="step-icon-wrap"><i data-lucide="check-square" class="step-icon"></i></div>
+                        <h3>Order Approval</h3>
+                        <p>Confirm the quote and we'll begin processing your order immediately through our supply chain.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step animate-on-scroll">
+                    <div class="step-number">04</div>
+                    <div class="step-card">
+                        <div class="step-icon-wrap"><i data-lucide="truck" class="step-icon"></i></div>
+                        <h3>Safe Delivery</h3>
+                        <p>Your order is carefully packed and delivered to your doorstep within the committed timeline.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- 6. CORPORATE GIFTING PREVIEW                  -->
+    <!-- ============================================= -->
+    <section class="gifting" id="gifting">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-badge">Gifting Solutions</span>
+                <h2 class="section-title">Elevate Your <span class="text-gradient">Brand Presence</span></h2>
+                <p class="section-subtitle">Premium corporate gifts tailored for your employees, clients, and partners.</p>
+            </div>
+            <div class="gifting-grid">
+                <div class="gifting-content animate-on-scroll">
+                    <p class="gifting-desc">We offer a wide range of customized gifting options from luxury items to daily utility products. Our curation ensures that your brand values are reflected in every gift.</p>
+                    <div class="gifting-categories">
+                        <div class="gift-cat">
+                            <i data-lucide="award" class="gift-cat-icon"></i>
+                            <div>
+                                <h4>Branded Merchandise</h4>
+                                <p>T-shirts, caps, and accessories with your corporate identity.</p>
+                            </div>
+                        </div>
+                        <div class="gift-cat">
+                            <i data-lucide="gift" class="gift-cat-icon"></i>
+                            <div>
+                                <h4>Premium Hampers</h4>
+                                <p>Curated gift sets for festivals and special corporate occasions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/gifting" class="btn btn-primary">
+                        <span>Explore Gifting Catalog</span>
+                    </a>
+                </div>
+                <div class="gifting-image animate-on-scroll">
+                    <img src="public/images/corporate-gifting.png" alt="Corporate Gifting Showcase" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- 7. CLIENTS SECTION                            -->
+    <!-- ============================================= -->
+    <section class="clients" id="clients">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-badge">Our Trusted Partners</span>
+                <h2 class="section-title">Trusted by <span class="text-gradient">Industry Giants</span></h2>
+                <p class="section-subtitle">We are proud to serve over 500+ corporate clients across various industries.</p>
+            </div>
+            <div class="clients-grid">
+                <div class="client-card animate-on-scroll" data-delay="0">
+                    <div class="client-logo-img">
+                        <img src="public/images/clients/lnt.png" alt="L&T Logo" loading="lazy">
+                    </div>
+                    <span class="client-name">L&T Infotech</span>
+                    <span class="client-industry">Technology</span>
+                </div>
+                <div class="client-card animate-on-scroll" data-delay="100">
+                    <div class="client-logo-img">
+                        <img src="public/images/clients/apollo.png" alt="Apollo Logo" loading="lazy">
+                    </div>
+                    <span class="client-name">Apollo Hospitals</span>
+                    <span class="client-industry">Healthcare</span>
+                </div>
+                <div class="client-card animate-on-scroll" data-delay="200">
+                    <div class="client-logo-img">
+                        <img src="public/images/clients/macleods.png" alt="Macleods Logo" loading="lazy">
+                    </div>
+                    <span class="client-name">Macleods Pharma</span>
+                    <span class="client-industry">Pharmaceuticals</span>
+                </div>
+                <div class="client-card animate-on-scroll" data-delay="300">
+                    <div class="client-logo-img">
+                        <img src="public/images/clients/unichem.jfif" alt="Unichem Logo" loading="lazy">
+                    </div>
+                    <span class="client-name">Unichem Labs</span>
+                    <span class="client-industry">Pharmaceuticals</span>
+                </div>
+                <div class="client-card animate-on-scroll" data-delay="400">
+                    <div class="client-logo-img">
+                        <img src="public/images/clients/fdc.png" alt="FDC Logo" loading="lazy">
+                    </div>
+                    <span class="client-name">FDC Limited</span>
+                    <span class="client-industry">Healthcare</span>
+                </div>
+                <div class="client-card animate-on-scroll" data-delay="500">
+                    <div class="client-logo-img">
+                        <img src="public/images/clients/kokilaben.png" alt="Kokilaben Logo" loading="lazy">
+                    </div>
+                    <span class="client-name">Kokilaben Hospital</span>
+                    <span class="client-industry">Healthcare</span>
+                </div>
+                <div class="client-card animate-on-scroll" data-delay="600">
+                    <div class="client-logo-img">
+                        <img src="public/images/clients/elite-global.png" alt="Elite Global Logo" loading="lazy">
+                    </div>
+                    <span class="client-name">Elite Global</span>
+                    <span class="client-industry">Logistics</span>
+                </div>
+                <div class="client-card animate-on-scroll" data-delay="700">
+                    <div class="client-logo-img">
+                        <img src="public/images/clients/pelltech.jpg" alt="Pelltech Logo" loading="lazy">
+                    </div>
+                    <span class="client-name">Pelltech Healthcare</span>
+                    <span class="client-industry">Medical</span>
+                </div>
+                <div class="client-card animate-on-scroll" data-delay="800">
+                    <div class="client-logo-img">
+                        <img src="public/images/clients/pharma-source.png" alt="Pharma Source Logo" loading="lazy">
+                    </div>
+                    <span class="client-name">Pharma Source</span>
+                    <span class="client-industry">Pharmaceuticals</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- 8. CONTACT SECTION                            -->
+    <!-- ============================================= -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-badge">Get In Touch</span>
+                <h2 class="section-title">Let's <span class="text-gradient">Work Together</span></h2>
+                <p class="section-subtitle">Have a requirement? Reach out to us and our team will get back to you within 24 hours.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info animate-on-scroll">
+                    <div class="contact-info-card">
+                        <div class="info-item">
+                            <div class="info-icon-wrap"><i data-lucide="mail" class="info-icon"></i></div>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>order@officemax.co.in</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon-wrap"><i data-lucide="phone" class="info-icon"></i></div>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>+91 8453656565</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon-wrap"><i data-lucide="map-pin" class="info-icon"></i></div>
+                            <div>
+                                <h4>Our Office</h4>
+                                <p>Malad West, Mumbai, Maharashtra 400064</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container animate-on-scroll">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="contactName">Full Name <span class="required">*</span></label>
+                                <div class="input-wrapper">
+                                    <i data-lucide="user" class="input-icon"></i>
+                                    <input type="text" id="contactName" name="name" placeholder="Enter your full name" required>
+                                </div>
+                                <span class="error-msg" id="nameError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Email Address <span class="required">*</span></label>
+                                <div class="input-wrapper">
+                                    <i data-lucide="mail" class="input-icon"></i>
+                                    <input type="email" id="contactEmail" name="email" placeholder="Enter your email address" required>
+                                </div>
+                                <span class="error-msg" id="emailError"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Message <span class="required">*</span></label>
+                            <div class="input-wrapper textarea-wrapper">
+                                <i data-lucide="message-square" class="input-icon"></i>
+                                <textarea id="contactMessage" name="message" rows="5" placeholder="Tell us about your requirements..." required></textarea>
+                            </div>
+                            <span class="error-msg" id="messageError"></span>
+                        </div>
+                        <button type="submit" id="submitBtn" class="btn btn-primary btn-submit">
+                            <i data-lucide="send" class="btn-icon"></i>
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading" style="display:none;"><span class="spinner"></span> Sending...</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- FOOTER                                        -->
+    <!-- ============================================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="nav-logo footer-logo">
+                        <img src="public/images/logo.png" alt="OfficeMax - Encouraging India" height="75">
+                    </a>
+                    <p class="footer-desc">One of the largest sellers of office products in India. We care for brands, top quality, and reasonable cost.</p>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/products">Products</a></li>
+                        <li><a href="/gifting">Corporate Gifting</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>
+                            <span><i data-lucide="map-pin" style="width:14px;height:14px;display:inline;vertical-align:middle;margin-right:6px;color:var(--accent);"></i>S-001, Sainath Apt, P.G.Marg, Off.Link Road, Malad (W), Mumbai- 400064</span>
+                        </li>
+                        <li>
+                            <span><i data-lucide="phone" style="width:14px;height:14px;display:inline;vertical-align:middle;margin-right:6px;color:var(--accent);"></i>+91 8453656565</span>
+                        </li>
+                        <li>
+                            <a href="mailto:order@officemax.co.in"><i data-lucide="mail" style="width:14px;height:14px;display:inline;vertical-align:middle;margin-right:6px;color:var(--accent);"></i>order@officemax.co.in</a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@officemax.co.in"><i data-lucide="mail" style="width:14px;height:14px;display:inline;vertical-align:middle;margin-right:6px;color:var(--accent);"></i>info@officemax.co.in</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 All Rights Reserved. <br> Developed by Choredigital Communication LLP</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <i data-lucide="check-circle" class="toast-icon"></i>
+            <div>
+                <strong class="toast-title">Message Sent!</strong>
+                <p class="toast-msg">We will get back to you shortly.</p>
+            </div>
+            <button class="toast-close" id="toastClose"><i data-lucide="x"></i></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

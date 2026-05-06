@@ -1,0 +1,224 @@
+/* Gifting Page - Premium Styling with Banner */
+
+:root {
+    --gift-primary: #8b5cf6;
+    --gift-secondary: #ec4899;
+    --gift-text: #0f172a;
+    --gift-text-muted: #475569;
+}
+
+.gifting-page {
+    background: #fdfcff;
+}
+
+/* --- Banner Section --- */
+.gifting-banner {
+    padding: 140px 0 100px;
+    background: radial-gradient(circle at 0% 0%, rgba(139, 92, 246, 0.05), transparent),
+        radial-gradient(circle at 100% 100%, rgba(236, 72, 153, 0.05), transparent);
+    overflow: hidden;
+}
+
+.gifting-banner-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.banner-content {
+    max-width: 600px;
+}
+
+.banner-title {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    color: var(--gift-text);
+    margin: 20px 0;
+}
+
+.banner-subtitle {
+    font-size: 1.2rem;
+    color: var(--gift-text-muted);
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.banner-image-wrapper {
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+    background: white;
+    padding: 10px;
+}
+
+.banner-image-wrapper img {
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+}
+
+.banner-float-badge {
+    position: absolute;
+    bottom: 30px;
+    right: -20px;
+    background: white;
+    padding: 15px 25px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 700;
+    color: var(--gift-primary);
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* --- Feature Cards --- */
+.gifting-container {
+    padding: 80px 0;
+}
+
+.gift-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.gift-feature-card {
+    background: white;
+    border-radius: 24px;
+    padding: 40px;
+    border: 1px solid #f1f5f9;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease;
+}
+
+.gift-feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(139, 92, 246, 0.1);
+}
+
+.gift-card-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+.card-delight .gift-card-icon-wrapper {
+    background: #eff6ff;
+    color: #3b82f6;
+}
+
+.card-branded .gift-card-icon-wrapper {
+    background: #fffbeb;
+    color: #f59e0b;
+}
+
+.card-eco .gift-card-icon-wrapper {
+    background: #f0fdf4;
+    color: #10b981;
+}
+
+.highlight-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.highlight-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    color: #64748b;
+}
+
+/* --- Gallery --- */
+.gift-gallery {
+    padding: 100px 0;
+    background: white;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.gallery-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .gifting-banner-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .banner-content {
+        margin: 0 auto;
+    }
+
+    .banner-float-badge {
+        right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gift-feature-grid {
+        grid-template-columns: 1fr;
+    }
+}
