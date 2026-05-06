@@ -28,9 +28,6 @@ const createTransporter = () => {
     });
 };
 
-// =========================================
-// API ROUTES & SECURITY
-// =========================================
 
 // Simple In-Memory Rate Limiter to prevent email spam/abuse
 const rateLimitMap = new Map();
